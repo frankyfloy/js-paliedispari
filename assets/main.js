@@ -14,16 +14,17 @@ function palindroma(parola) {
     var lengthWord = parola.length;
     var isPalindroma;
 
-    if (lengthWord <= 0 || lengthWord % 2 == 1)
+    if (lengthWord <= 0)
         isPalindroma = false;
 
-    else if (lengthWord % 2 == 0) {
+    else if (lengthWord >= 2) {
         var contatoreIndiceDecrescente = lengthWord;
 
-        for (var i = 0; i < lengthWord / 2; i++) {
-            if (parola.charAt(i).toUpperCase() == parola.charAt(--contatoreIndiceDecrescente).toUpperCase()) {
-                    isPalindroma = true;
-            }else {
+        for (var i = 0; i < lengthWord; i++) {
+
+            if (parola.charAt(i) == parola.charAt(--contatoreIndiceDecrescente)) {
+                isPalindroma = true;
+            } else {
                 isPalindroma = false;
                 // Blocco ciclo è corretto terminare un ciclo in questo modo per evitare break?  o lascio andare?
                 i = lengthWord;
@@ -38,19 +39,19 @@ function palindromaCaseSensitive(parola) {
     var lengthWord = parola.length;
     var isPalindroma;
 
-    if (lengthWord <= 0 || lengthWord % 2 == 1)
+    if (lengthWord <= 0)
         isPalindroma = false;
 
-    else if (lengthWord % 2 == 0) {
+    else if (lengthWord >= 2) {
         var contatoreIndiceDecrescente = lengthWord;
 
-        for (var i = 0; i < lengthWord / 2; i++) {
-            if (parola.charAt(i) == parola.charAt(--contatoreIndiceDecrescente)) {
-                    isPalindroma = true;
-            }else {
-                isPalindroma = false;
+        for (var i = 0; i < lengthWord; i++) {
 
-                // **** Blocco ciclo è corretto terminare un ciclo in questo modo per evitare break?  o lascio andare?
+            if (parola.charAt(i).toUpperCase() == parola.charAt(--contatoreIndiceDecrescente).toUpperCase()) {
+                isPalindroma = true;
+            } else {
+                isPalindroma = false;
+                // Blocco ciclo è corretto terminare un ciclo in questo modo per evitare break?  o lascio andare?
                 i = lengthWord;
             }
         }
@@ -116,6 +117,9 @@ btn_input_Dispari.addEventListener("click", function(e){
 
 btn_input_num.addEventListener("click", function(e){
     // Salvo valore input numero;
+    if (true) {
+
+    }
     numInput = document.getElementById('inputNum').value;
 
     //  button input number remove container padre aggiungendo a quest'ultimo d-none
