@@ -12,48 +12,47 @@
         <title>Pali-E-Dispari</title>
     </head>
 
-    <body class="d-flex justify-content-center">
+    <body class="d-flex flex-column justify-content-around text-center">
 
-        <div class="container-fluid">
-
-            jooooooooo
+        <div id="container-Game-Palindroma" class="container d-flex flex-column justify-content-around text-primary bg-success">
+            <button id="btn-" class="btn btn-primary" type="submit" >Gioca</button>
         </div>
 
-        <div class="container-fluid">
-            <div id="container-Pari-Dispari" class="text-primary">
 
-                <button id="btn-Pari-E-Dispari" class="btn btn-primary" type="submit" >Gioca</button>
+        <div id="container-Pari-Dispari" class="container d-flex flex-column justify-content-around text-primary bg-success">
 
-                <div id="container_input_PariDispari" class="input-group d-none mb-3 text-center">
+            <button id="btn-Pari-E-Dispari" class="btn btn-primary" type="submit" >Gioca</button>
 
-                    <button id="btn_input_Pari" class="btn btn-primary btn-lg pl-2 pr-2 mr-2" type="button">PARI</button>
+            <div id="container_input_PariDispari" class="input-group d-none mb-3 text-center">
 
-                    <button id="btn_input_Dispari" class="btn btn-primary btn-lg pl-2 pr-2" type="button">DISPARI</button>
+                <button id="btn_input_Pari" class="btn btn-primary btn-block" type="button">PARI</button>
 
-                </div>
-
-                <div id="container_inputNum" class="input-group d-none mb-3">
-                    <div class="col-12">
-                        <h4>Inserisci un numero da 1 a 5</h4>
-                    </div>
-
-                  <div class="input-group-prepend col-12 mt-3 d-block">
-                    <input id="inputNum" type="text" class="form-control" aria-describedby="basic-addon1">
-
-                    <button id="btn_input_num" class="btn btn-outline-secondary mt-2" type="button">Vai</button>
-                  </div>
-                </div>
-
-                <div id="container_win" class="d-none justify-content-center">
-                    <h1>Hai vinto :)</h1>
-                </div>
-
-                <div id="container_lost" class="d-none justify-content-center">
-                    <h1>Hai Perso :(</h1>
-                </div>
+                <button id="btn_input_Dispari" class="btn btn-primary btn-block" type="button">DISPARI</button>
 
             </div>
+
+            <div id="container_inputNum" class="input-group d-none mb-3">
+                <div class="col-12">
+                    <h4>Inserisci un numero da 1 a 5</h4>
+                </div>
+
+              <div class="input-group-prepend col-12 mt-3 d-block">
+                <input id="inputNum" type="text" class="form-control" aria-describedby="basic-addon1">
+
+                <button id="btn_input_num" class="btn btn-primary mt-2" type="button">Vai</button>
+              </div>
+            </div>
+
+            <div id="container_win" class="d-none justify-content-center">
+                <h1>Hai vinto :)</h1>
+            </div>
+
+            <div id="container_lost" class="d-none justify-content-center">
+                <h1>Hai Perso :(</h1>
+            </div>
+
         </div>
+
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

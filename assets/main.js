@@ -1,63 +1,67 @@
 // programma palindromo  da continuare
 
 // variabili
-var wordInput = prompt("Inserisci una parola");
-console.log(palindroma(wordInput));
-console.log(palindromaCaseSensitive(wordInput));
-
-
-// Funzioni controllo PALINDROMO STRINGHE
-// (**palindromaCaseSensitive è più specifica,
-// perchè differenzia lettere Minuscole da lettere Maiuscole)
-
-function palindroma(parola) {
-    var lengthWord = parola.length;
-    var isPalindroma;
-
-    if (lengthWord <= 0)
-        isPalindroma = false;
-
-    else if (lengthWord >= 2) {
-        var contatoreIndiceDecrescente = lengthWord;
-
-        for (var i = 0; i < lengthWord; i++) {
-
-            if (parola.charAt(i) == parola.charAt(--contatoreIndiceDecrescente)) {
-                isPalindroma = true;
-            } else {
-                isPalindroma = false;
-                // Blocco ciclo è corretto terminare un ciclo in questo modo per evitare break?  o lascio andare?
-                i = lengthWord;
-            }
-        }
-    }
-    return isPalindroma;
-}
-
-
-function palindromaCaseSensitive(parola) {
-    var lengthWord = parola.length;
-    var isPalindroma;
-
-    if (lengthWord <= 0)
-        isPalindroma = false;
-
-    else if (lengthWord >= 2) {
-        var contatoreIndiceDecrescente = lengthWord;
-
-        for (var i = 0; i < lengthWord; i++) {
-
-            if (parola.charAt(i).toUpperCase() == parola.charAt(--contatoreIndiceDecrescente).toUpperCase()) {
-                isPalindroma = true;
-            } else {
-                isPalindroma = false;
-                // Blocco ciclo è corretto terminare un ciclo in questo modo per evitare break?  o lascio andare?
-                i = lengthWord;
-            }
-        }
-    }
-    return isPalindroma;
-}
+// var wordInput = prompt("Inserisci una parola");
+// console.log(palindroma(wordInput));
+// console.log(palindromaCaseSensitive(wordInput));
+//
+//
+//
+//
+//
+//
+// // Funzioni controllo PALINDROMO STRINGHE
+// // (**palindromaCaseSensitive è più specifica,
+// // perchè differenzia lettere Minuscole da lettere Maiuscole)
+//
+// function palindroma(parola) {
+//     var lengthWord = parola.length;
+//     var isPalindroma;
+//
+//     if (lengthWord <= 0)
+//         isPalindroma = false;
+//
+//     else if (lengthWord >= 2) {
+//         var contatoreIndiceDecrescente = lengthWord;
+//
+//         for (var i = 0; i < lengthWord; i++) {
+//
+//             if (parola.charAt(i) == parola.charAt(--contatoreIndiceDecrescente)) {
+//                 isPalindroma = true;
+//             } else {
+//                 isPalindroma = false;
+//                 // Blocco ciclo è corretto terminare un ciclo in questo modo per evitare break?  o lascio andare?
+//                 i = lengthWord;
+//             }
+//         }
+//     }
+//     return isPalindroma;
+// }
+//
+//
+// function palindromaCaseSensitive(parola) {
+//     var lengthWord = parola.length;
+//     var isPalindroma;
+//
+//     if (lengthWord <= 0)
+//         isPalindroma = false;
+//
+//     else if (lengthWord >= 2) {
+//         var contatoreIndiceDecrescente = lengthWord;
+//
+//         for (var i = 0; i < lengthWord; i++) {
+//
+//             if (parola.charAt(i).toUpperCase() == parola.charAt(--contatoreIndiceDecrescente).toUpperCase()) {
+//                 isPalindroma = true;
+//             } else {
+//                 isPalindroma = false;
+//                 // Blocco ciclo è corretto terminare un ciclo in questo modo per evitare break?  o lascio andare?
+//                 i = lengthWord;
+//             }
+//         }
+//     }
+//     return isPalindroma;
+// }
 
 
 
@@ -65,7 +69,6 @@ function palindromaCaseSensitive(parola) {
 
 // controllare l'input
 // aggiungere do while con controllo ripetizione gioco eccc....sorry
-
 
 
 // VARIABILI PROGRAMMA
