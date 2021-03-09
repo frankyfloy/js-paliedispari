@@ -5,10 +5,16 @@
 
 body{
     height: 100vh;
+    background-color: #000000;
 }
 
-#container-Game-Palindroma,#container-Pari-Dispari{
-    height: 200px;
+#container_Game_Palindroma,#container-Pari-Dispari{
+    height: 220px;
     width: 300px;
     border-radius: 10px;
+}
+
+header{
+    color: yellow;
+    font-size: 20px;
 }
